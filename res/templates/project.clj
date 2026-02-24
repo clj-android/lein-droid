@@ -35,6 +35,13 @@
                 :use-debug-keystore true
                 :ignore-log-priority [:debug :verbose]
                 :aot :all
+
+                ;; Enable dynamic classloader in release (off by default):
+                ;; :enable-dynamic-compilation true
+                ;; Enable nREPL in release (off by default; also add
+                ;; tools.nrepl to this profile's :dependencies):
+                ;; :start-nrepl-server true
+
                 :build-type :release}}]
 
              :lean

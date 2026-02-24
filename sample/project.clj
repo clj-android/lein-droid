@@ -53,6 +53,17 @@
                          :ignore-log-priority [:debug :verbose]
                          :aot :all
 
+                         ;; Enable the dynamic classloader and Clojure
+                         ;; compilation at runtime in release builds. Off by
+                         ;; default; enable for apps that eval Clojure at
+                         ;; runtime.
+                         ;; :enable-dynamic-compilation true
+
+                         ;; Enable the nREPL server in release builds. Off
+                         ;; by default. Requires tools.nrepl in :dependencies
+                         ;; for this profile (see :dev profile for example).
+                         ;; :start-nrepl-server true
+
                          ;; This tells lein-droid to build in release mode,
                          ;; disabling debugging and signing the resulting
                          ;; package.
