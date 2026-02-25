@@ -27,7 +27,7 @@
       ;; (if there is at least one).
       (let [same-jars (if (= name "clojure")
                         (let [droid-clojures (filter #(= (:group %)
-                                                         "org.clojure-android/")
+                                                         "com.goodanser.clj-android/")
                                                      same-jars)]
                           (if-not (empty? droid-clojures)
                             droid-clojures

@@ -11,7 +11,7 @@
   :javac-options ["-target" "1.6" "-source" "1.6" "-Xlint:-options"]
   :plugins [[lein-droid "{{lein-droid-version}}"]]
 
-  :dependencies [[org.clojure-android/clojure "{{clojure-version}}"]
+  :dependencies [[com.goodanser.clj-android/clojure "{{clojure-version}}"]
                  [neko/neko "{{neko-version}}"]]
   :profiles {:default [:dev]
 
@@ -49,7 +49,7 @@
               {:dependencies ^:replace [[org.skummet/clojure "{{skummet-version}}"]
                                         [neko/neko "{{neko-version}}"]]
                :exclusions [[org.clojure/clojure]
-                            [org.clojure-android/clojure]]
+                            [com.goodanser.clj-android/clojure]]
                :jvm-opts ["-Dclojure.compile.ignore-lean-classes=true"]
                :android {:lean-compile true
                          :proguard-execute true

@@ -140,7 +140,7 @@
               :library (get options ":library" false)
               :new-project true
               :lein-droid-version (or (current-plugin-version) "0.4.3")
-              :clojure-version (latest-version 'org.clojure-android/clojure "1.7.0-r3")
+              :clojure-version (latest-version 'com.goodanser.clj-android/clojure "1.7.0-r3")
               :neko-version (latest-version 'neko "4.0.0-alpha5")
               :skummet-version (latest-version 'org.skummet/clojure "1.7.0-r1")}]
     (if (= (:library data) "true")

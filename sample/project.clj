@@ -12,7 +12,7 @@
 
   :plugins [[lein-droid "0.4.6"]]
 
-  :dependencies [[org.clojure-android/clojure "1.7.0-RC1" :use-resources true]
+  :dependencies [[com.goodanser.clj-android/clojure "1.7.0-RC1" :use-resources true]
                  ;; [com.google.android.gms/play-services "7.0.0" :extension "aar"]
                  ;; [com.android.support/appcompat-v7 "18.0.0" :extension "aar"]
                  [neko/neko "4.0.0-alpha5"]]
@@ -74,7 +74,7 @@
               {:dependencies ^:replace [[org.skummet/clojure "1.7.0-r1"]
                                         [neko/neko "4.0.0-alpha5"]]
                :exclusions [[org.clojure/clojure]
-                            [org.clojure-android/clojure]]
+                            [com.goodanser.clj-android/clojure]]
                :jvm-opts ["-Dclojure.compile.ignore-lean-classes=true"]
                :global-vars ^:replace {clojure.core/*warn-on-reflection* true}
                :android {:use-debug-keystore true

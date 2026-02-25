@@ -22,7 +22,7 @@ lein: ~/bin/lein
 
 env:
   - PROJECT="sample" PREP="cd sample" LEIN_DROID_PROJECT="" DEPLOY="bash travis/deploy.sh"
-  - PROJECT="newtest" PREP="lein droid new newtest org.clojure_android.newtest" LEIN_DROID_PROJECT="newtest/project.clj" DEPLOY=""
+  - PROJECT="newtest" PREP="lein droid new newtest com.goodanser.clj_android.newtest" LEIN_DROID_PROJECT="newtest/project.clj" DEPLOY=""
 
 script:
   - $PREP
