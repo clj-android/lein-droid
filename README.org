@@ -1,5 +1,11 @@
 * lein-droid
 
+** Currently deprecated
+
+For the moment, Gradle is the only supported build tool. See https://github.com/clj-android/docs/blob/main/migration-guide.md
+
+----
+
   [[https://travis-ci.org/clojure-android/lein-droid/][https://travis-ci.org/clojure-android/lein-droid.svg?branch=master]]
 
   A Leiningen plugin to simplify Clojure development for Android
